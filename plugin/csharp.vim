@@ -14,3 +14,10 @@ command! CsharpDebugBreakHere call CsharpDebugBreakHere()
 
 nmap <leader>d :CsharpDebugHere<CR>
 nmap <leader>D :CsharpDebugBreakHere<CR>
+
+" Online documentation commands and keymaps {{{1
+command! CsharpOnlineDoc call CsharpOnlineDoc()
+
+map <silent> <F1> :CsharpOnlineDoc<CR>
+imap <silent> <F1> <ESC>:CsharpOnlineDoc<CR>
+
