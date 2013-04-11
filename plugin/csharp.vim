@@ -1,3 +1,11 @@
+" csharp.vim - dev tools for c#
+" Maintainer: Rawane Zossou <dev@raw1z.fr>
+
+if exists('g:loaded_csharp') || &cp || v:version < 700
+  finish
+endif
+let g:loaded_csharp = 1
+
 " Compilation commands and keymaps {{{1
 command! CsharpBuild          call CsharpBuild()
 command! CsharpRebuild        call CsharpRebuild()
