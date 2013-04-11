@@ -1,5 +1,5 @@
 " setup integrated help
-function! CsharpOnlineDoc()
+function! csharp#doc#CsharpOnlineDoc()
   let s:wordUnderCursor = expand("<cword>")
 
   if &ft =~ "cs"
