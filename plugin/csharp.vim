@@ -1,6 +1,11 @@
 " csharp.vim - dev tools for c#
 " Maintainer: Rawane Zossou <dev@raw1z.fr>
 
+" this plugin only works for windows enviromnents
+if !has("win32")
+  finish
+endif
+
 if exists('g:loaded_csharp') || &cp || v:version < 700
   finish
 endif
