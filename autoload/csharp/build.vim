@@ -14,7 +14,7 @@ function! csharp#build#BuildSolution(solutionFile, options)
     let compilationOptions = compilationOptions."/t:".a:options.targets." "
   endif
 
-  let &mp = g:csharp_msbuild.compilationOptions.a:solutionFile
+  let &mp = g:csharp_msbuild.compilationOptions.'"'.a:solutionFile.'"'
   set errorformat=\ %#%f(%l\\\,%c):\ %m
   silent execute "Dispatch"
 endfunction
